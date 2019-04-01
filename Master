@@ -4,7 +4,7 @@
    "hideColumnHeader": true,
    "rowFormatter": {
       "elmType": "div",
-      "_comment_": "THIS IS THE MAIN DIV",
+      "_comment_": "MAIN DIV",
       "attributes": {
          "class": "ms-bgColor-neutralLighter"
       },
@@ -60,7 +60,7 @@
                   "elmType": "span",
                   "txtContent": "=[$Title]",
                   "style": {
-                     "display": "block"
+                  "display": "=if([$Title] == '', 'none', 'block')"
                   },
                   "attributes": {
                      "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
@@ -79,7 +79,10 @@
                },
                {
                   "elmType": "span",
-                  "txtContent": "[$Address]"
+                  "txtContent": "[$Address]",
+                  "style": {
+                  "display": "=if([$Address] == '', 'none', 'block')"
+                  }
                },
                {
                   "elmType": "a",
@@ -99,7 +102,7 @@
                   "elmType": "span",
                   "txtContent": "='Capacity ' + [$Maximum_x0020_capacity]",
                   "style": {
-                     "display": "block",
+                  "display": "=if([$Maximum_x0020_capacity] == '', 'none', 'block')",
                      "padding-top": "20px"
                   }
                }
@@ -129,9 +132,9 @@
                   "children": [
                      {
                         "elmType": "span",
-                        "txtContent": "[$Rating]",
                         "style": {
-                           "padding-right": "5px"
+                           "padding-right": "5px",
+                           "display": "=if([$Rating] == '', 'none', 'block')"
                         }
                      },
                      {
@@ -158,7 +161,7 @@
                   "elmType": "span",
                   "txtContent": "='£' +[$Price]",
                   "style": {
-                     "display": "block"
+                  "display": "=if([$Rating] == '', 'none', 'block')"
                   }
                },
                {
