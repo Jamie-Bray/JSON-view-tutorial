@@ -1,184 +1,184 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
-  "hideSelection": true,
-  "hideColumnHeader": true,
-  "rowFormatter": {
-                "elmType": "div",
-                "_comment_": "THIS IS THE MAIN DIV",
-                "attributes": {
-                               "class": "ms-bgColor-neutralLighter"
-                              },
-                "style":      {
-                               "display": "flex",
-                               "flex-wrap": "wrap",
-                               "align-items": "stretch",
-                               "flex-direction": "row",
-                               "padding": "20px",
-                               "margin-bottom": "16px",
-                               "max-width": "850px",
-                               "border-radius": "8px"
-                                },
-                                   "children": [
-                                   {
-                                   "elmType": "div",
-                                   "__comment": "Div 1",
-                                   "style": {
-                                   "flex-grow": "1",
-                                   "display": "flex",
-                                   "flex-direction": "column",
-                                   "flex-wrap": "nowrap",
-                                   "align-items": "stretch",
-                                   "max-width": "260px"
-                                   },
-                                     "children": [
-                                     {
-                                     "elmType": "img",
-                                     "style": {
-                                     "width": "260px",
-                                     "height": "160px"
-                                     },
-                                     "attributes": {
-                                     "src": "[$Picture]"
-                                    }
-                                   }
-                                  ]
-                                 },
-      {
-        "elmType": "div",
-         "_comment_": "Div 2",
-        "style": {
-          "flex-grow": "1",
-          "display": "flex",
-          "flex-direction": "column",
-          "flex-wrap": "nowrap",
-          "align-items": "center",
-          "max-width": "360px",
-          "min-width": "205px"
-        },
-        "children": [
-          {
-            "elmType": "span",
-            "txtContent": "=[$Title]",
-            "style": {
-              "display": "block"
-            },
-            "attributes": {
-              "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
-            }
-          },
-          {
-            "elmType": "span",
-            "txtContent": "Location",
-            "style": {
-              "display": "block",
-              "padding-top": "20px"
-            },
-            "attributes": {
-              "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
-            }
-          },
-          {
-            "elmType": "span",
-            "txtContent": "[$Address]"
-          },
-          {
-            "elmType": "a",
-            "attributes": {
-              "iconName": "MapPin",
-              "class": "ms-fontColor-themePrimary",
-              "target": "_blank",
-              "href": "='http://maps.google.com/?q=' + ( [$Title] + ' ')  + ( [$Address])"
-            },
-            "style": {
-              "font-size": "15px",
-              "padding-top": "5px",
-              "cursor": "pointer"
-            }
-          },
-          {
-            "elmType": "span",
-            "txtContent": "='Capacity ' + [$Maximum_x0020_capacity]",
-            "style": {
-              "display": "block",
-              "padding-top": "20px"
-            }
-          }
-        ]
+   "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+   "hideSelection": true,
+   "hideColumnHeader": true,
+   "rowFormatter": {
+      "elmType": "div",
+      "_comment_": "THIS IS THE MAIN DIV",
+      "attributes": {
+         "class": "ms-bgColor-neutralLighter"
       },
-      {
-        "elmType": "div",
-        "_comment_": "Div 3",
-        "style": {
-          "flex-grow": "1",
-          "display": "flex",
-          "flex-direction": "column",
-          "align-items": "center",
-          "margin-top": "10px",
-          "max-width": "310px",
-          "min-width": "155px"
-        },
-        "children": [
-          {
+      "style": {
+         "display": "flex",
+         "flex-wrap": "wrap",
+         "align-items": "stretch",
+         "flex-direction": "row",
+         "padding": "20px",
+         "margin-bottom": "16px",
+         "max-width": "850px",
+         "border-radius": "8px"
+      },
+      "children": [
+         {
             "elmType": "div",
-             "_comment_": "RATING & STAR DIV",
+            "__comment": "Div 1",
             "style": {
-              "display": "block",
-              "font-size": "15px",
-              "font-weight": "bold"
+               "flex-grow": "1",
+               "display": "flex",
+               "flex-direction": "column",
+               "flex-wrap": "nowrap",
+               "align-items": "stretch",
+               "max-width": "260px"
             },
             "children": [
-              {
-                "elmType": "span",
-                "txtContent": "[$Rating]",
-                "style": {
-                  "padding-right": "5px"
-                }
-              },
-              {
-                "elmType": "span",
-                "attributes": {
-                  "iconName": "FavoriteStarFill",
-                  "class": "ms-fontColor-themePrimary"
-                }
-              }
+               {
+                  "elmType": "img",
+                  "style": {
+                     "width": "260px",
+                     "height": "160px"
+                  },
+                  "attributes": {
+                     "src": "[$Picture]"
+                  }
+               }
             ]
-          },
-          {
-            "elmType": "span",
-            "txtContent": "Price",
+         },
+         {
+            "elmType": "div",
+            "_comment_": "Div 2",
             "style": {
-              "display": "block",
-              "padding-top": "20px"
+               "flex-grow": "1",
+               "display": "flex",
+               "flex-direction": "column",
+               "flex-wrap": "nowrap",
+               "align-items": "center",
+               "max-width": "360px",
+               "min-width": "205px"
             },
-            "attributes": {
-              "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
-            }
-          },
-          {
-            "elmType": "span",
-            "txtContent": "='£' +[$Price]",
+            "children": [
+               {
+                  "elmType": "span",
+                  "txtContent": "=[$Title]",
+                  "style": {
+                     "display": "block"
+                  },
+                  "attributes": {
+                     "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
+                  }
+               },
+               {
+                  "elmType": "span",
+                  "txtContent": "Location",
+                  "style": {
+                     "display": "block",
+                     "padding-top": "20px"
+                  },
+                  "attributes": {
+                     "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
+                  }
+               },
+               {
+                  "elmType": "span",
+                  "txtContent": "[$Address]"
+               },
+               {
+                  "elmType": "a",
+                  "attributes": {
+                     "iconName": "MapPin",
+                     "class": "ms-fontColor-themePrimary",
+                     "target": "_blank",
+                     "href": "='http://maps.google.com/?q=' + ( [$Title] + ' ')  + ( [$Address])"
+                  },
+                  "style": {
+                     "font-size": "15px",
+                     "padding-top": "5px",
+                     "cursor": "pointer"
+                  }
+               },
+               {
+                  "elmType": "span",
+                  "txtContent": "='Capacity ' + [$Maximum_x0020_capacity]",
+                  "style": {
+                     "display": "block",
+                     "padding-top": "20px"
+                  }
+               }
+            ]
+         },
+         {
+            "elmType": "div",
+            "_comment_": "Div 3",
             "style": {
-              "display": "block"
-            }
-          },
-          {
-            "elmType": "button",
-            "style": {
-              "border": "none",
-              "padding-top": "32px",
-              "background-color": "transparent",
-              "color": "#0078d7",
-              "padding-left": "0px",
-              "text-align": "left",
-              "cursor": "pointer"
+               "flex-grow": "1",
+               "display": "flex",
+               "flex-direction": "column",
+               "align-items": "center",
+               "margin-top": "10px",
+               "max-width": "310px",
+               "min-width": "155px"
             },
-            "txtContent": "View venue details",
-            "customRowAction": {
-              "action": "defaultClick"
-            }
-          }
-        ]
-      }
-    ]
-  }
+            "children": [
+               {
+                  "elmType": "div",
+                  "_comment_": "RATING & STAR DIV",
+                  "style": {
+                     "display": "block",
+                     "font-size": "15px",
+                     "font-weight": "bold"
+                  },
+                  "children": [
+                     {
+                        "elmType": "span",
+                        "txtContent": "[$Rating]",
+                        "style": {
+                           "padding-right": "5px"
+                        }
+                     },
+                     {
+                        "elmType": "span",
+                        "attributes": {
+                           "iconName": "FavoriteStarFill",
+                           "class": "ms-fontColor-themePrimary"
+                        }
+                     }
+                  ]
+               },
+               {
+                  "elmType": "span",
+                  "txtContent": "Price",
+                  "style": {
+                     "display": "block",
+                     "padding-top": "20px"
+                  },
+                  "attributes": {
+                     "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
+                  }
+               },
+               {
+                  "elmType": "span",
+                  "txtContent": "='£' +[$Price]",
+                  "style": {
+                     "display": "block"
+                  }
+               },
+               {
+                  "elmType": "button",
+                  "style": {
+                     "border": "none",
+                     "padding-top": "32px",
+                     "background-color": "transparent",
+                     "color": "#0078d7",
+                     "padding-left": "0px",
+                     "text-align": "left",
+                     "cursor": "pointer"
+                  },
+                  "txtContent": "View venue details",
+                  "customRowAction": {
+                     "action": "defaultClick"
+                  }
+               }
+            ]
+         }
+      ]
+   }
 }
